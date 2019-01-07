@@ -1,0 +1,13 @@
+.removeTodoButton{
+    background: rgba(35, 114, 206, 0.918);
+    border-radius: 4px;
+    border:none;
+    cursor:pointer;
+    height: 50%;
+}
+
+.todoItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
