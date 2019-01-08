@@ -36,7 +36,9 @@ class App extends Component {
           <TodoInput todoText="" addTodo={this.addTodo}/>
           <ul>
             {this.state.todos.map((todo) => {
-              return <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo}/>
+              return <TodoItem 
+                      todo={todo} key={todo.id} 
+                      id={todo.id} removeTodo={this.removeTodo}/>
             })}
           </ul>
         </div>

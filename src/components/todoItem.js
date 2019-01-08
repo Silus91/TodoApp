@@ -2,9 +2,6 @@ import React from 'react';
 import './todoItem.css'
 
 export default class TodoItem extends React.Component{
-  constructor(props){
-    super(props);
-  }
 
   removeTodo(id){
     this.props.removeTodo(id);
@@ -13,8 +10,8 @@ export default class TodoItem extends React.Component{
   render(){
     return(
     <div className="todoItem">
-            <p>{this.props.todo.text}</p>
-        <button className="removeTodoButton" onClick={(e)=> this.removeTodo(this.props.id)}>
+            <p className="todoiItemParagraph">{this.props.todo.text}</p>
+        <button className="removeTodoButton" onClick={()=> this.removeTodo(this.props.id)}>
           Remove
         </button>
     </div>

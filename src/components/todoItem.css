@@ -4,10 +4,17 @@
     border:none;
     cursor:pointer;
     height: 50%;
+
 }
 
 .todoItem{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items:center;
+    position: static;
+
+}
+.todoiItemParagraph{
+    text-transform: capitalize;
 }
