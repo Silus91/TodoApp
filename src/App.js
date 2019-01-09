@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/header';
 import TodoInput from './components/todoinput';
 import TodoItem from './components/todoItem';
+import { styles } from 'ansi-colors';
 
 class App extends Component {
   constructor(props){
@@ -24,7 +25,7 @@ class App extends Component {
 
   removeTodo(id){
     this.setState({
-      todos: this.state.todos.filter((todo,index) => todo.id !==id)
+      todos: this.state.todos.filter((todo) => todo.id !==id)
     });
   }
 
@@ -34,7 +35,7 @@ class App extends Component {
         <div className="container">
           <Header />
           <TodoInput todoText="" addTodo={this.addTodo}/>
-          <ul>
+          <ul className="ulApp">
             {this.state.todos.map((todo) => {
               return <TodoItem 
                       todo={todo} key={todo.id} 
