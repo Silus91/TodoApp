@@ -24,7 +24,7 @@ constructor(props){
 
   render() {
     return (
-      <div>
+      <div className="inputContainer">
         <input className="todoInput" type="text" value={this.state.value} onChange={this.handleChange}/>
         <button className="todoButton"
          onClick={() => this.addTodo(this.state.value)}>Submit</button>
