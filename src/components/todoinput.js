@@ -21,7 +21,7 @@ constructor(props){
       this.setState({value: ''});
     }
   }
-
+  TodoInput 
   render() {
     return (
       <div className="inputContainer">
