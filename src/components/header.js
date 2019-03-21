@@ -4,7 +4,7 @@ export default class Header extends React.Component{
 
   render(){
     return(
-      <div> To Do App!!</div>
+      <div> To Do App use it wisely!!</div>
     );
   }
 }
