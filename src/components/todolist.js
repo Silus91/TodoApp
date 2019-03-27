@@ -8,6 +8,9 @@ export default class TodoList extends React.Component{
         <button>
           To do List!
         </button>
+        <div>
+          <input>look for</input>
+        </div>
       </div>
     );
   }
