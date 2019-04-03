@@ -8,7 +8,17 @@ export default class Navigation extends React.Component {
 
   render() {
     return(
-      <div>Nav</div>
+      <div>
+        <div>
+          Navigation
+        </div>
+        <div>
+          Dice
+        </div>
+        <div>
+          Todo Stuff
+        </div>
+      </div>
     );
   }
 }
