@@ -4,10 +4,7 @@ import './index.css';
 import App from './App';
 import TodoList from './components/todolist';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-
-
+import { BrowserRouter as Router, Switch,  } from 'react-router-dom';
 
 
 ReactDOM.render(

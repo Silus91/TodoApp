@@ -1,10 +1,7 @@
 import React from 'react';
 
 export default class TodoList extends React.Component{
-  constructor(props){
-    super(props);
-    
-  }
+
 
   render() {
     return (
@@ -17,6 +14,12 @@ export default class TodoList extends React.Component{
             <input type="text"/>
             <button type="submit">Submit</button>
           </form>
+          <div className="todoItem">
+            <div className="todoiItemParagraph">{this.props.todo.text}</div>
+        <button className="removeTodoButton" onClick={()=> this.removeTodo(this.props.id)}>
+          Remove
+        </button>
+          </div>
         </div>
       </div>
     );
