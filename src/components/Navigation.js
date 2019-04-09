@@ -10,6 +10,9 @@ export default class Navigation extends React.Component {
     return(
       <div>
         <div>
+          Profile
+        </div>
+        <div>
           Navigation
         </div>
         <div>
