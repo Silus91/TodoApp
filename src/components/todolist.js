@@ -12,7 +12,7 @@ export default class TodoList extends React.Component{
         <div>
           <form>
             <input type="text"/>
-            <button type="submit">Submit</button>
+            <button type="submit">Lets go</button>
           </form>
           <div className="todoItem">
             <div className="todoiItemParagraph">{this.props.todo.text}</div>
