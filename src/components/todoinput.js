@@ -6,7 +6,6 @@ constructor(props){
     super(props);
     this.handleChange = this.handleChange.bind(this);
     this.addTodo = this.addTodo.bind(this);
-
     this.state = {value: ""};
   }
 
