@@ -11,7 +11,6 @@ ReactDOM.render(
   <Router>
     <Switch>
       <App  path="/members" component={App}/>
-      <TodoList path="/todolist" component={TodoList} />
     </Switch>
   </Router>
   , document.getElementById('root'));
