@@ -14,11 +14,27 @@ class App extends Component {
     }
     this.addTodo = this.addTodo.bind(this);
     this.removeTodo = this.removeTodo.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.addTodos = this.addTodos.bind(this);
+
   }
 
-  addTodo(todoText){
+  handleChange(e){
+    this.setState({value: e.target.value});
+    }
+    
+    addTodo(todo){
+    if (
+      todo.length > 0) {
+      this.props.addTodo(todo);
+      this.setState({value: ''});
+      }
+      addTodos(todo);
+    }
+
+  addTodos(todo){
     let todos = this.state.todos.slice();
-    todos.push({id: this.state.nextId, text: todoText});
+    todos.push({id: this.state.nextId, text: todo});
     this.setState({todos: todos, nextId: ++this.state.nextId});
   }
 
@@ -33,7 +49,17 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <Header />
-          <TodoInput todoText="" addTodo={this.addTodo}/>
+          <input
+            className="todoInput"
+            type="text" value={this.state.value}
+            onChange={this.handleChange}
+          />
+          <button 
+            className="todoButton"
+            onClick={() => this.addTodo(this.state.value)}
+          >
+            Submit
+          </button>
           <ul className="ulApp">
             {this.state.todos.map((todo) => {
               return(
@@ -52,3 +78,10 @@ class App extends Component {
 }
 
 export default App;
+
+
+
+
+
+
+

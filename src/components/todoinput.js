@@ -21,7 +21,6 @@ constructor(props){
     }
   }
   
-  TodoInput 
   render() {
     return (
       <div className="inputContainer">
